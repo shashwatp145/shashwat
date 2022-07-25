@@ -23,44 +23,20 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Inbox',
-    url: '/page/Inbox',
+    title: 'dashboard',
+    url: '/page/dashboard',
     iosIcon: mailOutline,
     mdIcon: mailSharp
   },
   {
-    title: 'Outbox',
-    url: '/page/Outbox',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp
-  },
-  {
-    title: 'Favorites',
-    url: '/page/Favorites',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
-  },
-  {
-    title: 'Archived',
-    url: '/page/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp
-  },
-  {
-    title: 'Trash',
-    url: '/page/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp
-  },
-  {
-    title: 'Spam',
-    url: '/page/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
+    title: 'Second',
+    url: '/page/second',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
   }
 ];
 
-const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+// const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
 const Menu: React.FC = () => {
   const location = useLocation();
@@ -83,7 +59,7 @@ const Menu: React.FC = () => {
           })}
         </IonList>
 
-        <IonList id="labels-list">
+        {/* <IonList id="labels-list">
           <IonListHeader>Labels</IonListHeader>
           {labels.map((label, index) => (
             <IonItem lines="none" key={index}>
@@ -91,7 +67,7 @@ const Menu: React.FC = () => {
               <IonLabel>{label}</IonLabel>
             </IonItem>
           ))}
-        </IonList>
+        </IonList> */}
       </IonContent>
     </IonMenu>
   );
